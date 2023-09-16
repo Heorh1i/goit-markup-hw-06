@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
     <title>Document</title>
   </head>
@@ -57,6 +57,11 @@
             </li>
           </ul>
         </address>
+        <button class="open-menu-button">
+          <svg class="open-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-Burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -69,8 +74,12 @@
         </div>
       </section>
       <section class="second-section">
-        <!-- Duties -->
-        <div class="container">
+        <!-- 
+
+          Duties
+
+         -->
+        <div class="container hero-container">
           <h2 class="visually-hidden">Duties</h2>
           <ul class="duties-list">
             <li class="duty-item">
@@ -130,7 +139,7 @@
 
       <!-- Our Team -->
       <section class="our-team">
-        <div class="container">
+        <div class="team-container">
           <h2 class="team-header">Our Team</h2>
 
           <ul class="members">
@@ -449,7 +458,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="footer-container">
         <div class="footer-logo-container">
           <a href="./index.html" class="logo">
             Web<span class="logo-element">Studio</span>
@@ -516,8 +525,9 @@
         </div>
       </div>
     </footer>
+
     <!-- Backdrop -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal-window">
         <button type="button" class="close-button">
           <svg class="x-icon" width="8" height="8">
@@ -608,6 +618,14 @@
           <button class="modal-send-button" type="button">Send</button>
         </form>
       </div>
+    </div>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+      <button class="mobile-menu-close-btn">
+        <svg class="mobile-menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
     </div>
   </body>
 </html>
