@@ -24,7 +24,7 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header-container">
+      <div class="header-container">
         <nav class="nav-menu">
           <a href="./index.html" class="logo"
             >Web<span class="logo-element">Studio</span></a
@@ -68,10 +68,10 @@
     <!-- Main -->
     <main>
       <section class="top-section">
-        <div class="container">
-          <h1 class="main-header">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-service">Order Service</button>
-        </div>
+        <!-- <div class="container"> -->
+        <h1 class="main-header">Effective Solutions for Your Business</h1>
+        <button type="button" class="order-service">Order Service</button>
+        <!-- </div> -->
       </section>
       <section class="second-section">
         <!-- 
@@ -79,7 +79,7 @@
           Duties
 
          -->
-        <div class="container hero-container">
+        <div class="container duties-container">
           <h2 class="visually-hidden">Duties</h2>
           <ul class="duties-list">
             <li class="duty-item">
@@ -459,7 +459,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-logo-container">
+        <div class="footer-logo-container footer-part">
           <a href="./index.html" class="logo">
             Web<span class="logo-element">Studio</span>
           </a>
@@ -469,7 +469,7 @@
           </p>
         </div>
 
-        <div class="social-container">
+        <div class="social-container footer-part">
           <p class="social-header">Social media</p>
           <ul class="social-list">
             <li class="social-list-item">
@@ -504,7 +504,7 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe-container">
+        <div class="subscribe-container footer-part">
           <p class="subscribe-header">Subscribe</p>
           <form class="subscribe-form">
             <label class="subscribe-label">
@@ -606,19 +606,23 @@
               id="user-privacy"
             />
 
-            <label for="user-privacy" class="modal-privacy-label modal-label"
-              ><span class="privacy-checkbox">
+            <label for="user-privacy" class="modal-privacy-label modal-label">
+              <span class="privacy-checkbox">
                 <svg class="privacy-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
-                </svg> </span
-              >I accept the terms and conditions of the
-              <a class="modal-privacy-link">Privacy Policy</a>
+                </svg>
+              </span>
+              <div>
+                I accept the terms and conditions of the
+                <a class="modal-privacy-link">Privacy Policy</a>
+              </div>
             </label>
           </div>
           <button class="modal-send-button" type="button">Send</button>
         </form>
       </div>
     </div>
+
     <!-- MOBILE MENU -->
     <div class="mobile-menu">
       <button class="mobile-menu-close-btn">
@@ -626,6 +630,65 @@
           <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
         </svg>
       </button>
+      <nav>
+        <ul class="mobile-menu-links">
+          <li>
+            <a href="./index.html" class="mobile-menu-link active-page"
+              >Studio</a
+            >
+          </li>
+          <li><a href="" class="mobile-menu-link">Portfolio</a></li>
+          <li><a href="" class="mobile-menu-link">Contacts</a></li>
+        </ul>
+        <address>
+          <ul class="mobile-menu-address">
+            <li>
+              <a href="tel:+110001111111" class="mobile-menu-address-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu-address-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link"
+                ><svg class="social-list-icon" width="24" height="24">
+                  <use
+                    href="./images/icons.svg#icon-linkedin-1"
+                    width="24px"
+                    height="24px"
+                  ></use></svg
+              ></a>
+            </li>
+          </ul>
+        </address>
+      </nav>
     </div>
   </body>
 </html>
