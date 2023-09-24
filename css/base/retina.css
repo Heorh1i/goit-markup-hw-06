@@ -3,7 +3,7 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('/images/background/people-office-mobile.jpg');
+    url(/images/background/banner-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: padding-box;
@@ -17,7 +17,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/background/people-office-tablet.jpg);
+      url(/images/background/banner-tablet.jpg);
   }
 }
 @media screen and (min-width: 1158px) {
@@ -26,36 +26,41 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/background/people-office.jpg');
+      url(/images/background/banner-desktop.jpg);
   }
 }
 
 @media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),
-  screen and (min-device-pixel-ratio: 2) {
+  screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   .top-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/background/people-office-mobile@2x.jpg);
-    @media screen and (min-width: 768px) {
-    }
-    .top-section {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(/images/background/people-office-tablet@2x.jpg);
-    }
+      url(/images/background/banner-mobile@2x.jpg);
   }
-  @media screen and (min-width: 1158px) {
-    .top-section {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url('/images/background/people-office@2x.jpg');
-    }
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .top-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/background/banner-tablet@2x.jpg);
+  }
+}
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+  .top-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/background/banner-desktop@2x.jpg);
   }
 }
