@@ -201,6 +201,9 @@
   border: none;
   stroke-width: 1px;
 }
+.modal-label-text {
+  width: 100%;
+}
 
 .modal-privacy-link {
   color: #4d5ae5;
@@ -237,6 +240,9 @@
 @media screen and (min-width: 768px) {
   .modal-window {
     width: 408px;
+  }
+  .modal-label-text {
+    width: auto;
   }
 }
 @media screen and (min-width: 1158px) {
