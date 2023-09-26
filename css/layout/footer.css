@@ -158,6 +158,9 @@
   .footer .logo {
     text-align: start;
   }
+  .social-header {
+    text-align: left;
+  }
 
   .subscribe-header {
     text-align: start;
@@ -166,6 +169,9 @@
     display: flex;
     flex-direction: row;
     gap: 24px;
+  }
+  .subscribe-label {
+    margin-bottom: 0;
   }
   .subscribe-field {
     margin-bottom: 0;
@@ -212,7 +218,6 @@
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: left;
   }
 
   .social-list-link {
@@ -251,6 +256,7 @@
     display: flex;
     flex-direction: row;
     gap: 24px;
+    margin-bottom: 0;
   }
   .subscribe-field {
     width: 264px;
